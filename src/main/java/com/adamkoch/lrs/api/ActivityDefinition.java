@@ -1,8 +1,5 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
-import com.adamkoch.lrs.annotations.Recommended;
-
 import java.util.Collection;
 
 /**
@@ -18,32 +15,27 @@ public interface ActivityDefinition {
     /**
      * The human readable/visual name of the Activity.
      */
-    @Recommended
     LanguageMap getName();
 
     /**
      * A description of the Activity.
      */
-    @Recommended
     LanguageMap getDescription();
 
     /**
      * The type of Activity.
      */
-    @Recommended
     InternationalizedResourceIdentifier getType();
 
     /**
      * Resolves to a document with human-readable information about the Activity, which could include a way to launch
      * the activity.
      */
-    @Optional
     InternationalizedResourceLocator getMoreInfo();
 
     /**
      * A map of other properties as needed.
      */
-    @Optional
     LrsObject getExtensions();
 
     Collection<InteractionActivity> getInteractionActivities();

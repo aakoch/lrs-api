@@ -1,6 +1,6 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
+import java.util.Optional;
 
 /**
  * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#242-actor">Actor</a>.
@@ -14,8 +14,7 @@ import com.adamkoch.lrs.annotations.Optional;
  */
 public interface Actor {
 
-    @Optional
     String getName();
 
-    String getObjectType();
+    Optional<String> getObjectType();
 }

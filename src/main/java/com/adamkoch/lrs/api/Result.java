@@ -1,7 +1,5 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
-
 import java.time.Duration;
 
 /**
@@ -17,7 +15,6 @@ public interface Result {
     /**
      * The score of the Agent in relation to the success or quality of the experience. See: Score
      */
-    @Optional
     Score getScore();
 
     /**
@@ -25,7 +22,6 @@ public interface Result {
      *
      * @return If defined, Boolean.TRUE or Boolean.FALSE. Null means undefined.
      */
-    @Optional
     Boolean getSuccess();
 
     /**
@@ -33,24 +29,20 @@ public interface Result {
      *
      * @return If defined, Boolean.TRUE or Boolean.FALSE. Null means undefined.
      */
-    @Optional
     Boolean getCompletion();
 
     /**
      * A responses appropriately formatted for the given Activity.
      */
-    @Optional
     String getResponse();
 
     /**
      * Period of time over which the Statement occurred.
      */
-    @Optional
     Duration getDuration();
 
     /**
      * A map of other properties as needed. See: Extensions
      */
-    @Optional
     LrsObject getExtensions();
 }

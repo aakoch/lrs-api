@@ -1,7 +1,6 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
-import com.adamkoch.lrs.annotations.Required;
+import java.util.Optional;
 
 /**
  * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2441-when-the-objecttype-is-activity">LrsObject of
@@ -23,19 +22,16 @@ public interface ActivityObject extends LrsObject {
     /**
      * MUST be Activity when present.
      */
-    @Optional
-    default String getObjectType() {
-        return "Activity";
+    default Optional<String> getObjectType() {
+        return Optional.of("Activity");
     }
 
     /**
      * An identifier for a single unique Activity.
      */
-    @Required
     InternationalizedResourceIdentifier getId();
 
     /**
      */
-    @Optional
     ActivityDefinition getDefinition();
 }

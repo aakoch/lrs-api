@@ -1,7 +1,5 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
-
 import java.util.Map;
 import java.util.UUID;
 
@@ -18,59 +16,48 @@ public interface Context {
     /**
      * The registration that the Statement is associated with.
      */
-    @Optional
     UUID getRegistration();
 
     /**
      * Instructor that the Statement relates to, if not included as the Actor of the Statement.
      */
-    @Optional
     Agent getInstructor();
 
     /**
      * Team that this Statement relates to, if not included as the Actor of the Statement.
      */
-    @Optional
     Group getTeam();
 
     /**
      * A map of the types of learning activity context that this Statement is related to. Valid context types are:
      * parent, "grouping", "category" and "other".
      */
-    @Optional
     Map getContextActivities();
 
     /**
      * Revision of the learning activity associated with this Statement. Format is free.
      */
-    @Optional
     String getRevision();
 
     /**
      * Platform used in the experience of this learning activity.
      */
-    @Optional
     String getPlatform();
 
     /**
      * (as defined in RFC 5646)	Code representing the language in which the experience being recorded in this Statement
      * (mainly) occurred in, if applicable and known.
      */
-    @Optional
     String getLanguage();
 
     /**
      * Reference	Another Statement to be considered as context for this Statement.
-     *
-     * @return
      */
-    @Optional
     StatementReference getStatementReference();
 
     /**
      * A map of any other domain-specific context relevant to this Statement. For example, in a flight simulator
      * altitude, airspeed, wind, attitude, GPS coordinates might all be relevant (See Extensions)
      */
-    @Optional
     Map getExtensions();
 }

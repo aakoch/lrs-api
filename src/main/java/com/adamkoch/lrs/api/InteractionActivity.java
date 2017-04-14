@@ -9,6 +9,8 @@ package com.adamkoch.lrs.api;
  * @since 1.0.0
  */
 public interface InteractionActivity {
+
     InteractionType getInteractionType();
+
     ResponsePattern getCorrectResponsesPattern();
 }

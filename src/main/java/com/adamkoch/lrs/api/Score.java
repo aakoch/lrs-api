@@ -1,8 +1,5 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Optional;
-import com.adamkoch.lrs.annotations.Recommended;
-
 /**
  * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2451-score">Score</a>.
  *
@@ -19,7 +16,6 @@ public interface Score {
      * Decimal	number between -1 and 1, inclusive	The score related to the experience as modified by scaling and/or
      * normalization.
      */
-    @Recommended
     Number getScaled();
 
     /**
@@ -27,20 +23,17 @@ public interface Score {
      * Actor in the experience described by the Statement. This is not modified by any scaling or
      * normalization.
      */
-    @Optional
     Number getRaw();
 
     /**
      * Decimal	number less than max (if present)	The lowest possible score for the experience described by the
      * Statement.
      */
-    @Optional
     Number getMin();
 
     /**
      * Decimal	number greater than min (if present)	The highest possible score for the experience described by the
      * Statement.
      */
-    @Optional
     Number getMax();
 }

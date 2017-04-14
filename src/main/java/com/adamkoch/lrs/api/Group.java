@@ -1,8 +1,7 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.api.Actor;
-
 import java.util.Collection;
+import java.util.Optional;
 
 /**
  * <p>Created by aakoch on 2017-03-22.</p>
@@ -13,8 +12,8 @@ import java.util.Collection;
 public interface Group extends Actor {
 
     @Override
-    default String getObjectType() {
-        return ActorType.GROUP.toString();
+    default Optional<String> getObjectType() {
+        return Optional.of(ActorType.GROUP.toString());
     }
 
     /**

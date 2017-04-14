@@ -1,7 +1,6 @@
 package com.adamkoch.lrs.api;
 
-import com.adamkoch.lrs.annotations.Required;
-
+import java.util.Optional;
 import java.util.UUID;
 
 /**
@@ -12,13 +11,11 @@ import java.util.UUID;
  * @author aakoch
  * @since 1.0.0
  */
-public interface StatementReference {
+public interface StatementReference extends LrsObject {
 
-    @Required
-    default String getObjectType() {
-        return "StatementRef";
+    default Optional<String> getObjectType() {
+        return Optional.of("StatementRef");
     }
 
-    @Required
     UUID getId();
 }
