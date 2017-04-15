@@ -13,7 +13,7 @@ import com.adamkoch.lrs.api.InternationalizedResourceLocator;
  * @author aakoch
  * @since 1.0.0
  */
-public interface Account {
+public interface Account extends InverseFunctionalIdentifier {
     /**
      * The canonical home page for the system the account is on. This is based on FOAF's accountServiceHomePage.
      */
