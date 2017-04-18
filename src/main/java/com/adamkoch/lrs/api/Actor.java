@@ -14,7 +14,7 @@ import java.util.Optional;
  */
 public interface Actor {
 
-    String getName();
+    Optional<String> getName();
 
     Optional<String> getObjectType();
 }

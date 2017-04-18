@@ -3,7 +3,7 @@ package com.adamkoch.lrs.api;
 /**
  * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2451-score">Score</a>.
  *
- * <p>represents the outcome of a graded Activity achieved by an Agent</p>
+ * <p>"represents the outcome of a graded Activity achieved by an Agent"</p>
  *
  * <p>Created by aakoch on 2017-03-22.</p>
  *

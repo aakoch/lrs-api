@@ -3,15 +3,19 @@ package com.adamkoch.lrs.api;
 import java.util.Optional;
 
 /**
- * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2441-when-the-objecttype-is-activity">LrsObject of
+ * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2441-when-the-objecttype-is-activity">Object of
  * type Activity</a>.
- * <pre>A Statement can represent an Activity as the LrsObject of the Statement. The following table lists the LrsObject
- * properties in this case.
  *
- * Property	Type	Description	Required
- * objectType	String	MUST be Activity when present	Optional
- * id	IRI	An identifier for a single unique Activity	Required
- * definition	LrsObject	Metadata, See below	Optional</pre>
+ * <p>A Statement can represent an Activity as the Object of the Statement. The following table lists the Object
+ * properties in this case.</p>
+ *
+ * <pre>
+ * Property     Type     Description                                 Required
+ * objectType   String   MUST be Activity when presentOptional
+ * id           IRI      An identifier for a single unique Activity  Required
+ * definition   Object   Metadata, See below                         Optional
+ * </pre>
+ *
  * <p>Created by aakoch on 2017-03-22.</p>
  *
  * @author aakoch

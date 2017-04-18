@@ -4,6 +4,11 @@ import java.util.Collection;
 import java.util.Optional;
 
 /**
+ * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#group">When the Actor ObjectType is Group</a>
+ *
+ * <p>A Group represents a collection of Agents and can be used in most of the same situations an Agent can be used.
+ * There are two types of Groups: Anonymous Groups and Identified Groups.</p>
+ *
  * <p>Created by aakoch on 2017-03-22.</p>
  *
  * @author aakoch
@@ -25,4 +30,5 @@ public interface Group extends Actor {
      * A Group MUST NOT contain Group Objects in the "member" identifiers.
      */
     Collection<Agent> getMember();
+
 }

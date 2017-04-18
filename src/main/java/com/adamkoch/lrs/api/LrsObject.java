@@ -1,24 +1,25 @@
 package com.adamkoch.lrs.api;
 
 /**
- * <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#244-object">LrsObject</a> <p>The LrsObject
- * defines the thing that was acted on. The LrsObject of a Statement can be an Activity, Agent/Group, SubStatement, or
- * Statement Reference.
+ * <h1><a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#244-object">Object</a></h1>
  *
- * Some examples:
+ * <p>The Object defines the thing that was acted on. The LrsObject of a Statement can be an Activity,
+ * Agent/Group, SubStatement, or Statement Reference.</p>
  *
- * The LrsObject is an Activity: "Jeff wrote an essay about hiking."
+ * <h2>Some examples:</h2>
  *
- * The LrsObject is an Agent: "Nellie interviewed Jeff."
+ * <p>The Object is an Activity: "Jeff wrote an essay about hiking."</p>
  *
- * The LrsObject is a SubStatement or Statement Reference (different implementations, but similar when human-read):
- * "Nellie commented on 'Jeff wrote an essay about hiking.'"
+ * <p>The Object is an Agent: "Nellie interviewed Jeff."</p>
  *
- * Details
+ * <p>The Object is a SubStatement or Statement Reference (different implementations, but similar when human-read):
+ * "Nellie commented on 'Jeff wrote an essay about hiking.'"</p>
  *
- * Objects which are provided as a value for this property SHOULD include an "objectType" property. If not specified,
+ * <h2>Details</h2>
+ *
+ * <p>Objects which are provided as a value for this property SHOULD include an "objectType" property. If not specified,
  * the objectType is assumed to be Activity. Other valid values are: Agent, Group, SubStatement or StatementRef. The
- * properties of an LrsObject change according to the objectType.</p>
+ * properties of an Object change according to the objectType.</p>
  *
  * <p>Created by aakoch on 2017-03-22.</p>
  *
