@@ -38,6 +38,11 @@ public interface Result {
 
     /**
      * Period of time over which the Statement occurred.
+     *
+     * "Due to variable lengths of months, years and even minutes and the flexible nature of the 'timestamp' property as
+     * representing either the start, middle or end of the experience, it is not possible for an LRS to accurately
+     * deserialize the Result Duration and convert between units of time. For this reason, the Result Duration is
+     * considered a string for purposes of Statement comparison."
      */
     Duration getDuration();
 
