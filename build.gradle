@@ -4,14 +4,11 @@ apply plugin: 'maven'
 group = 'com.adamkoch.lrs'
 version = '1.0.0-SNAPSHOT'
 
-description = """"""
+description = "Learning Record Store (LRS) API"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-
-
 repositories {
-        
      maven { url "http://repo.maven.apache.org/maven2" }
 }
