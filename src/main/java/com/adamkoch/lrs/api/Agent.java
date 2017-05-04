@@ -12,10 +12,10 @@ import java.util.Optional;
  * @author aakoch
  * @since 1.0.0
  */
-public interface Agent extends Actor, LrsObject {
+public interface Agent extends Actor {
 
     @Override
-    default Optional<String> getObjectType() {
-        return Optional.of(ActorType.AGENT.toString());
+    default Optional<ObjectType> getObjectType() {
+        return Optional.of(ObjectType.AGENT);
     }
 }

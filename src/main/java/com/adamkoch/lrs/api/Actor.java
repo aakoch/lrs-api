@@ -12,9 +12,7 @@ import java.util.Optional;
  * @author aakoch
  * @since 1.0.0
  */
-public interface Actor {
+public interface Actor extends LrsObject {
 
     Optional<String> getName();
-
-    Optional<String> getObjectType();
 }

@@ -13,8 +13,8 @@ import java.util.UUID;
  */
 public interface StatementReference extends LrsObject {
 
-    default Optional<String> getObjectType() {
-        return Optional.of("StatementRef");
+    default Optional<ObjectType> getObjectType() {
+        return Optional.of(ObjectType.STATEMENTREF);
     }
 
     UUID getId();

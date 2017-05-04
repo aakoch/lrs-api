@@ -26,8 +26,8 @@ public interface ActivityObject extends LrsObject {
     /**
      * MUST be Activity when present.
      */
-    default Optional<String> getObjectType() {
-        return Optional.of("Activity");
+    default Optional<ObjectType> getObjectType() {
+        return Optional.of(ObjectType.ACTIVITY);
     }
 
     /**

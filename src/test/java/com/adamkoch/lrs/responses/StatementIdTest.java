@@ -20,8 +20,8 @@ public class StatementIdTest {
 
     @Test
     public void testOf_withValidStatementId() throws Exception {
-        String uuidAsString = "fd41c918-b88b-4b20-a0a5-a4c32391aaa0";
-        StatementId statementId = StatementId.of(uuidAsString);
+        final String uuidAsString = "fd41c918-b88b-4b20-a0a5-a4c32391aaa0";
+        final StatementId statementId = StatementId.of(uuidAsString);
         Assert.assertThat(statementId, CoreMatchers.instanceOf(StatementId.class));
         Assert.assertThat(statementId.toString(), CoreMatchers.equalTo(uuidAsString));
     }

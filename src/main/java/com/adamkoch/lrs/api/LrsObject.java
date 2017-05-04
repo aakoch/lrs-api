@@ -27,5 +27,5 @@ package com.adamkoch.lrs.api;
  * @since 1.0.0
  */
 public interface LrsObject {
-    java.util.Optional<String> getObjectType();
+    java.util.Optional<ObjectType> getObjectType();
 }

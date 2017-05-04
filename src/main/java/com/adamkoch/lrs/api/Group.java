@@ -14,11 +14,11 @@ import java.util.Optional;
  * @author aakoch
  * @since 1.0.0
  */
-public interface Group extends Actor {
+public interface Group extends Actor, LrsObject {
 
     @Override
-    default Optional<String> getObjectType() {
-        return Optional.of(ActorType.GROUP.toString());
+    default Optional<ObjectType> getObjectType() {
+        return Optional.of(ObjectType.GROUP);
     }
 
     /**
