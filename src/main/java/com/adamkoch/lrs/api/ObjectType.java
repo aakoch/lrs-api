@@ -26,7 +26,7 @@ public enum ObjectType {
             }
         }
 
-        throw new IllegalArgumentException("type \"" + type + "\" not found");
+        throw new IllegalArgumentException("Type \"" + type + "\" not found");
     }
 
     @Override

@@ -13,6 +13,6 @@ package com.adamkoch.lrs.api;
  */
 public interface Mbox extends InverseFunctionalIdentifier {
 
-    String getSha1Sum();
+    Sha1Sum getSha1Sum();
 
 }
