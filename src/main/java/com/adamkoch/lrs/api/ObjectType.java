@@ -1,5 +1,7 @@
 package com.adamkoch.lrs.api;
 
+import java.util.Arrays;
+
 /**
  * <p>Created by aakoch on 2017-05-03.</p>
  *
@@ -20,13 +22,12 @@ public enum ObjectType {
     }
 
     public static ObjectType of(String type) {
-        for (ObjectType objectType : values()) {
-            if (objectType.toString().equals(type)) {
-                return objectType;
-            }
-        }
-
-        throw new IllegalArgumentException("Type \"" + type + "\" not found");
+        return Arrays.stream(values())
+                     .filter(objectType -> objectType.value.equals(type) || objectType.value.toUpperCase().equals(type))
+                     .findFirst()
+                     .orElseThrow(
+                             () -> new IllegalArgumentException
+                                     ("Type \"" + type + "\" not found"));
     }
 
     @Override
