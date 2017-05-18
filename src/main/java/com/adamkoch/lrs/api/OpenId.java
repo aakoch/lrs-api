@@ -34,5 +34,5 @@ package com.adamkoch.lrs.api;
  * @author aakoch
  * @since 1.0.0
  */
-public interface OpenId extends InverseFunctionalIdentifier, UniformResourceIdentifier {
+public interface OpenId extends UniformResourceIdentifier {
 }
