@@ -8,7 +8,7 @@ package com.adamkoch.lrs.api;
  * @author aakoch
  * @since 1.0.0
  */
-public interface MailToIRI extends InternationalizedResourceIdentifier {
+public interface MailToIri extends InternationalizedResourceIdentifier {
     String getDomain();
 
     String getUserName();

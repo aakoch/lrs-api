@@ -32,7 +32,7 @@ public interface InverseFunctionalIdentifier {
      * The required format is "mailto:email address". Only email addresses that have only ever been and will ever be
      * assigned to this Agent, but no others, SHOULD be used for this property and mbox_sha1sum.
      */
-    Optional<MailToIRI> getMBox();
+    Optional<MailToIri> getMBox();
 
     /**
      * The hex-encoded SHA1 hash of a mailto IRI (i.e. the value of an mbox property). An LRS MAY include Agents with a
