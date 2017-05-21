@@ -21,7 +21,7 @@ import java.util.Optional;
  * @author aakoch
  * @since 1.0.0
  */
-public interface ActivityObject extends LrsObject {
+public interface Activity extends LrsObject {
 
     /**
      * MUST be Activity when present.

@@ -1,5 +1,7 @@
 package com.adamkoch.lrs.api;
 
+import java.util.Optional;
+
 /**
  * <h1><a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#244-object">Object</a></h1>
  *
@@ -27,5 +29,5 @@ package com.adamkoch.lrs.api;
  * @since 1.0.0
  */
 public interface LrsObject {
-    java.util.Optional<ObjectType> getObjectType();
+    Optional<ObjectType> getObjectType();
 }
