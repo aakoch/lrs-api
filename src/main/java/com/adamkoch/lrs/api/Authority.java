@@ -15,5 +15,6 @@ package com.adamkoch.lrs.api;
  * @author aakoch
  * @since 1.0.0
  */
-public interface Authority {
+public interface Authority extends Actor {
+    InverseFunctionalIdentifier getId();
 }
