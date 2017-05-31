@@ -35,8 +35,10 @@ public interface ActivityDefinition {
 
     /**
      * A map of other properties as needed.
+     * The keys of an extensions map MUST be IRIs.
+     * The values of an extension can be any JSON value or data structure.
      */
-    LrsObject getExtensions();
+    Extensions getExtensions();
 
     Collection<InteractionActivity> getInteractionActivities();
 }
